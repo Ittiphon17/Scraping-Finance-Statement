@@ -47,5 +47,3 @@ def requests_financial_data(ticker):
         except ValueError as e:
             print(f"Error parsing table for {ticker} - {folder_name}: {e}")
 
-# Call the function
-# requests_financial_data('kbank')
