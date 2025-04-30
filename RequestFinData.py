@@ -18,7 +18,8 @@ def requests_financial_data(ticker):
     }
 
     for folder_name, (report_path, _) in report_types.items():
-        time.sleep(np.random.randint(1, 6))  # Random delay to avoid rate-limiting
+        time_delay = np.random.randint(1,4) + np.random.rand()
+        time.sleep(time_delay)  # Random delay to avoid rate-limiting
         url = f'https://stockanalysis.com/quote/bkk/{ticker}/{report_path}/'
         file_name = f"{ticker}_{folder_name.replace(' ', '')}.csv"
         
@@ -36,7 +37,7 @@ def requests_financial_data(ticker):
             if table:
                 df = pd.read_html(StringIO(str(table)))[0].iloc[:, :-1]  # Directly parse the table
                 if isinstance(df.columns, pd.MultiIndex):
-                    df.columns = df.columns.get_level_values(0)  # Flatten MultiIndex columns
+                    df.columns = df.columns.get_level_values(1)  # Flatten MultiIndex columns
                 df.to_csv(file_path, index=False, encoding='utf-8')  # Save to CSV
                 print(f"⌛ Time taken for {ticker} - {folder_name}: {time.time() - start_time:.2f} sec | (Saved to {file_path})")
             else:
@@ -46,4 +47,9 @@ def requests_financial_data(ticker):
             print(f"Error fetching URL for {ticker} - {folder_name}: {e}")
         except ValueError as e:
             print(f"Error parsing table for {ticker} - {folder_name}: {e}")
+
+
+
+
+
 
