@@ -30,8 +30,12 @@ def fetch_financial_data(ticker, statement_type, url):
 
 def parse_html_table(response):
     soup = BeautifulSoup(response.content, 'html.parser')
-    tables = pd.read_html(str(soup), attrs={'data-test': 'financials'})
-    return tables
+    try:
+        tables = pd.read_html(str(soup), attrs={'data-test': 'financials'})
+        return tables
+    except ValueError:
+        return []
+
 
 def process_dataframe(df):
     if isinstance(df.columns, pd.MultiIndex):

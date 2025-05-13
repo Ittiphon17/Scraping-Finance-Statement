@@ -1,7 +1,5 @@
-# from RequestFinData import requests_financial_data
-# from InputSymbol import get_stock_ticker
 from NewRequest import scrape_financials
-
+from to_json import convert_csv_to_json
 import pandas as pd
 
 def get_stock_tickers_from_csv(filename='Stocks_Name.csv'):
@@ -24,7 +22,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+    convert_csv_to_json()
 
 
 # https://stockanalysis.com/quote/bkk/siri/financials/

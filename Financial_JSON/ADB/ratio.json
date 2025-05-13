@@ -1,0 +1,129 @@
+{
+  "Financial Ratios": {
+    "Market Capitalization": [
+      {
+        "2025-05-12": 421.0
+      }
+    ],
+    "Market Cap Growth": [
+      {
+        "2025-05-12": -43.0
+      }
+    ],
+    "Enterprise Value": [
+      {
+        "2025-05-12": 551.0
+      }
+    ],
+    "Last Close Price": [
+      {
+        "2025-05-12": 0.58
+      }
+    ],
+    "PE Ratio": [
+      {
+        "2025-05-12": 93.2
+      }
+    ],
+    "PS Ratio": [
+      {
+        "2025-05-12": 0.44
+      }
+    ],
+    "PB Ratio": [
+      {
+        "2025-05-12": 0.65
+      }
+    ],
+    "P/TBV Ratio": [
+      {
+        "2025-05-12": 0.65
+      }
+    ],
+    "EV/Sales Ratio": [
+      {
+        "2025-05-12": 0.58
+      }
+    ],
+    "EV/EBITDA Ratio": [
+      {
+        "2025-05-12": 93.83
+      }
+    ],
+    "EV/FCF Ratio": [
+      {
+        "2025-05-12": 1.67
+      }
+    ],
+    "Debt / Equity Ratio": [
+      {
+        "2025-05-12": 0.41
+      }
+    ],
+    "Debt / FCF Ratio": [
+      {
+        "2025-05-12": 0.79
+      }
+    ],
+    "Asset Turnover": [
+      {
+        "2025-05-12": 0.75
+      }
+    ],
+    "Inventory Turnover": [
+      {
+        "2025-05-12": 3.2
+      }
+    ],
+    "Quick Ratio": [
+      {
+        "2025-05-12": 0.99
+      }
+    ],
+    "Current Ratio": [
+      {
+        "2025-05-12": 1.35
+      }
+    ],
+    "Return on Equity (ROE)": [
+      {
+        "2025-05-12": 0.74
+      }
+    ],
+    "Return on Assets (ROA)": [
+      {
+        "2025-05-12": -2.29
+      }
+    ],
+    "Return on Capital (ROIC)": [
+      {
+        "2025-05-12": -2.91
+      }
+    ],
+    "Earnings Yield": [
+      {
+        "2025-05-12": 11.69
+      }
+    ],
+    "FCF Yield": [
+      {
+        "2025-05-12": 78.5
+      }
+    ],
+    "Dividend Yield": [
+      {
+        "2025-05-12": 3.45
+      }
+    ],
+    "Buyback Yield / Dilution": [
+      {
+        "2025-05-12": -2.73
+      }
+    ],
+    "Total Shareholder Return": [
+      {
+        "2025-05-12": 0.72
+      }
+    ]
+  }
+}

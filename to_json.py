@@ -1,19 +1,48 @@
 import pandas as pd
+import os
 import json
 
-# โหลดข้อมูล (ถ้าเป็นจาก CSV)
-df = pd.read_csv("BBL-Balance Sheet.csv")
+def convert_csv_to_json(base_dir="Financial Statements", output_base="Financial_JSON"):
+    statement_map = {
+        "Income": "Income Statement",
+        "Cash Flow": "Cash Flow Statement",
+        "Balance Sheet": "Balance Sheet",
+        "Ratio": "Financial Ratios"
+    }
 
-# สร้างโครงสร้าง JSON
-output = {}
-for item in df["Item"].unique():
-    records = df[df["Item"] == item][["Date", "Value"]]
-    data = [{row["Date"]: row["Value"]} for _, row in records.iterrows()]
-    output[item] = data
+    converted_symbols = set()  # เก็บชื่อหุ้นที่แปลงไปแล้ว
 
-# ใส่ key 'Income Statement'
-final_output = {"Income Statement": output}
+    for category_folder in os.listdir(base_dir):
+        category_path = os.path.join(base_dir, category_folder)
+        if not os.path.isdir(category_path):
+            continue
 
-# บันทึกเป็น JSON
-with open("incomestmt.json", "w", encoding="utf-8") as f:
-    json.dump(final_output, f, indent=2, ensure_ascii=False)
+        for filename in os.listdir(category_path):
+            if filename.endswith(".csv"):
+                symbol = filename.split("-")[0].upper()
+                filepath = os.path.join(category_path, filename)
+                df = pd.read_csv(filepath)
+
+                # เตรียม dict JSON
+                section_name = statement_map.get(category_folder, category_folder)
+                symbol_json = {section_name: {}}
+
+                # จัดข้อมูล long format -> nested dict
+                for item in df["Item"].unique():
+                    sub_df = df[df["Item"] == item]
+                    data = [{row["Date"]: row["Value"]} for _, row in sub_df.iterrows()]
+                    symbol_json[section_name][item] = data
+
+                # Save JSON
+                output_dir = os.path.join(output_base, symbol)
+                os.makedirs(output_dir, exist_ok=True)
+                out_file = os.path.join(output_dir, category_folder.lower().replace(" ", "") + ".json")
+                with open(out_file, "w", encoding="utf-8") as f:
+                    json.dump(symbol_json, f, indent=2, ensure_ascii=False)
+
+                # แจ้งว่าแปลงหุ้นนี้เรียบร้อย (ไม่ซ้ำซ้อนในหลายหมวด)
+                if symbol not in converted_symbols:
+                    print(f"✅ Converted {symbol} to JSON")
+                    converted_symbols.add(symbol)
+
+    print(f"\nAll CSV files converted to JSON and stored in '{output_base}' directory.")
