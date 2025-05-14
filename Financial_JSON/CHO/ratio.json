@@ -1,0 +1,109 @@
+{
+  "Financial Ratios": {
+    "Market Capitalization": [
+      {
+        "2025-05-13": 72.0
+      }
+    ],
+    "Market Cap Growth": [
+      {
+        "2025-05-13": 129.52
+      }
+    ],
+    "Enterprise Value": [
+      {
+        "2025-05-13": 1741.0
+      }
+    ],
+    "Last Close Price": [
+      {
+        "2025-05-13": 0.1
+      }
+    ],
+    "PS Ratio": [
+      {
+        "2025-05-13": 0.27
+      }
+    ],
+    "PB Ratio": [
+      {
+        "2025-05-13": 0.34
+      }
+    ],
+    "P/TBV Ratio": [
+      {
+        "2025-05-13": 0.36
+      }
+    ],
+    "EV/Sales Ratio": [
+      {
+        "2025-05-13": 6.57
+      }
+    ],
+    "EV/FCF Ratio": [
+      {
+        "2025-05-13": -4.78
+      }
+    ],
+    "Debt / Equity Ratio": [
+      {
+        "2025-05-13": 7.99
+      }
+    ],
+    "Asset Turnover": [
+      {
+        "2025-05-13": 0.09
+      }
+    ],
+    "Inventory Turnover": [
+      {
+        "2025-05-13": 0.59
+      }
+    ],
+    "Quick Ratio": [
+      {
+        "2025-05-13": 0.12
+      }
+    ],
+    "Current Ratio": [
+      {
+        "2025-05-13": 0.53
+      }
+    ],
+    "Return on Equity (ROE)": [
+      {
+        "2025-05-13": -227.54
+      }
+    ],
+    "Return on Assets (ROA)": [
+      {
+        "2025-05-13": -11.74
+      }
+    ],
+    "Return on Capital (ROIC)": [
+      {
+        "2025-05-13": -16.57
+      }
+    ],
+    "Earnings Yield": [
+      {
+        "2025-05-13": -1182.26
+      }
+    ],
+    "FCF Yield": [
+      {
+        "2025-05-13": -507.59
+      }
+    ],
+    "Buyback Yield / Dilution": [
+      {
+        "2025-05-13": -1422.89
+      }
+    ],
+    "Total Shareholder Return": [
+      {
+        "2025-05-13": -1422.89
+      }
+    ]
+  }
+}

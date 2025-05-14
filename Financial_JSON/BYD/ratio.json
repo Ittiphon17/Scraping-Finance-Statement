@@ -1,0 +1,69 @@
+{
+  "Financial Ratios": {
+    "Market Capitalization": [
+      {
+        "2025-05-13": 1876.0
+      }
+    ],
+    "Market Cap Growth": [
+      {
+        "2025-05-13": -81.28
+      }
+    ],
+    "Last Close Price": [
+      {
+        "2025-05-13": 0.36
+      }
+    ],
+    "PS Ratio": [
+      {
+        "2025-05-13": -0.48
+      }
+    ],
+    "PB Ratio": [
+      {
+        "2025-05-13": 0.25
+      }
+    ],
+    "Debt / Equity Ratio": [
+      {
+        "2025-05-13": 0.02
+      }
+    ],
+    "Quick Ratio": [
+      {
+        "2025-05-13": 40.49
+      }
+    ],
+    "Current Ratio": [
+      {
+        "2025-05-13": 40.93
+      }
+    ],
+    "Return on Equity (ROE)": [
+      {
+        "2025-05-13": -47.28
+      }
+    ],
+    "Return on Assets (ROA)": [
+      {
+        "2025-05-13": -45.84
+      }
+    ],
+    "Earnings Yield": [
+      {
+        "2025-05-13": -244.01
+      }
+    ],
+    "FCF Yield": [
+      {
+        "2025-05-13": -3.58
+      }
+    ],
+    "Buyback Yield / Dilution": [
+      {
+        "2025-05-13": -14.44
+      }
+    ]
+  }
+}

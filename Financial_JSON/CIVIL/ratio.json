@@ -1,0 +1,149 @@
+{
+  "Financial Ratios": {
+    "Market Capitalization": [
+      {
+        "2025-05-13": 1043.0
+      }
+    ],
+    "Market Cap Growth": [
+      {
+        "2025-05-13": -23.33
+      }
+    ],
+    "Enterprise Value": [
+      {
+        "2025-05-13": 3201.0
+      }
+    ],
+    "Last Close Price": [
+      {
+        "2025-05-13": 1.49
+      }
+    ],
+    "PE Ratio": [
+      {
+        "2025-05-13": 11.1
+      }
+    ],
+    "Forward PE": [
+      {
+        "2025-05-13": 7.45
+      }
+    ],
+    "PS Ratio": [
+      {
+        "2025-05-13": 0.21
+      }
+    ],
+    "PB Ratio": [
+      {
+        "2025-05-13": 0.55
+      }
+    ],
+    "P/TBV Ratio": [
+      {
+        "2025-05-13": 0.55
+      }
+    ],
+    "EV/Sales Ratio": [
+      {
+        "2025-05-13": 0.63
+      }
+    ],
+    "EV/EBITDA Ratio": [
+      {
+        "2025-05-13": 11.53
+      }
+    ],
+    "EV/EBIT Ratio": [
+      {
+        "2025-05-13": 39.31
+      }
+    ],
+    "EV/FCF Ratio": [
+      {
+        "2025-05-13": -19.52
+      }
+    ],
+    "Debt / Equity Ratio": [
+      {
+        "2025-05-13": 1.29
+      }
+    ],
+    "Debt / EBITDA Ratio": [
+      {
+        "2025-05-13": 8.9
+      }
+    ],
+    "Asset Turnover": [
+      {
+        "2025-05-13": 0.62
+      }
+    ],
+    "Inventory Turnover": [
+      {
+        "2025-05-13": 21.31
+      }
+    ],
+    "Quick Ratio": [
+      {
+        "2025-05-13": 0.9
+      }
+    ],
+    "Current Ratio": [
+      {
+        "2025-05-13": 1.09
+      }
+    ],
+    "Return on Equity (ROE)": [
+      {
+        "2025-05-13": 5.2
+      }
+    ],
+    "Return on Assets (ROA)": [
+      {
+        "2025-05-13": 0.62
+      }
+    ],
+    "Return on Capital (ROIC)": [
+      {
+        "2025-05-13": 1.21
+      }
+    ],
+    "Return on Capital Employed (ROCE)": [
+      {
+        "2025-05-13": 3.7
+      }
+    ],
+    "Earnings Yield": [
+      {
+        "2025-05-13": 9.3
+      }
+    ],
+    "FCF Yield": [
+      {
+        "2025-05-13": -15.72
+      }
+    ],
+    "Dividend Yield": [
+      {
+        "2025-05-13": 1.34
+      }
+    ],
+    "Payout Ratio": [
+      {
+        "2025-05-13": 8.66
+      }
+    ],
+    "Buyback Yield / Dilution": [
+      {
+        "2025-05-13": -6.08
+      }
+    ],
+    "Total Shareholder Return": [
+      {
+        "2025-05-13": -4.74
+      }
+    ]
+  }
+}

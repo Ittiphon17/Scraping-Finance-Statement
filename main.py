@@ -24,5 +24,10 @@ if __name__ == "__main__":
     main()
     convert_csv_to_json()
 
-
 # https://stockanalysis.com/quote/bkk/siri/financials/
+
+# pip freeze > requirements.txt
+
+# pip install -r requirements.txt
+
+# uvicorn get_api:app --host 0.0.0.0 --port 8000 --reload

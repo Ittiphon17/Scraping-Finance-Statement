@@ -1,0 +1,84 @@
+{
+  "Financial Ratios": {
+    "Market Capitalization": [
+      {
+        "2025-05-13": 450.0
+      }
+    ],
+    "Market Cap Growth": [
+      {
+        "2025-05-13": -20.0
+      }
+    ],
+    "Enterprise Value": [
+      {
+        "2025-05-13": -547.0
+      }
+    ],
+    "Last Close Price": [
+      {
+        "2025-05-13": 1.5
+      }
+    ],
+    "PS Ratio": [
+      {
+        "2025-05-13": 6.27
+      }
+    ],
+    "PB Ratio": [
+      {
+        "2025-05-13": 0.36
+      }
+    ],
+    "P/TBV Ratio": [
+      {
+        "2025-05-13": 0.36
+      }
+    ],
+    "Debt / Equity Ratio": [
+      {
+        "2025-05-13": 0.0
+      }
+    ],
+    "Asset Turnover": [
+      {
+        "2025-05-13": 0.06
+      }
+    ],
+    "Inventory Turnover": [
+      {
+        "2025-05-13": 18.29
+      }
+    ],
+    "Quick Ratio": [
+      {
+        "2025-05-13": 302.32
+      }
+    ],
+    "Current Ratio": [
+      {
+        "2025-05-13": 303.7
+      }
+    ],
+    "Return on Equity (ROE)": [
+      {
+        "2025-05-13": -2.12
+      }
+    ],
+    "Return on Assets (ROA)": [
+      {
+        "2025-05-13": -1.15
+      }
+    ],
+    "Return on Capital (ROIC)": [
+      {
+        "2025-05-13": -1.16
+      }
+    ],
+    "Earnings Yield": [
+      {
+        "2025-05-13": -6.03
+      }
+    ]
+  }
+}
