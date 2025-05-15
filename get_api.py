@@ -7,7 +7,6 @@ app = FastAPI()
 
 BASE_DIR = os.path.join(os.getcwd(), "Financial_JSON")
 
-# Mapping จาก endpoint เป็นชื่อไฟล์
 FILE_MAP = {
     "incomestmt": "income.json",
     "cashflow": "cashflow.json",
@@ -21,7 +20,12 @@ async def get_financial_statement(symbol: str, statement: str):
     if statement not in FILE_MAP:
         raise HTTPException(status_code=404, detail="Invalid statement type.")
 
-    symbol_path = os.path.join(BASE_DIR, symbol.upper())
+    # รองรับชื่อหุ้นที่ขึ้นต้นด้วย _
+    safe_symbol = symbol.upper()
+    if safe_symbol == "COM7":
+        safe_symbol = f"_{safe_symbol}"
+
+    symbol_path = os.path.join(BASE_DIR, safe_symbol)
     if not os.path.exists(symbol_path):
         raise HTTPException(status_code=404, detail="Symbol not found.")
 
@@ -33,3 +37,6 @@ async def get_financial_statement(symbol: str, statement: str):
         data = json.load(f)
 
     return JSONResponse(content=data)
+
+# :8000/symbol=_COM7/ratio/
+# :8000/symbol=BBL/cashflow/
