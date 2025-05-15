@@ -20,7 +20,7 @@ Agent Stock Suggestion/
 ├── flow_financial_data.py     # Orchestrates data scraping and processing flow ⭐
 ├── get_api.py                 # FastAPI server exposing API endpoints ⭐
 ├── main.py                    # Entry point or controller logic for the app ⭐
-├── NewRequest.py              # Script to send scraping requests ⭐
+├── RequestFinancial.py        # Script to send scraping requests ⭐
 ├── README.md                  # Project documentation
 ├── requirements.txt           # List of Python dependencies
 ├── Stocks_Name.csv            # List of Thai stock symbols (input file) There are only examples!
