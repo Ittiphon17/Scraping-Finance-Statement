@@ -3,10 +3,11 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 from datetime import datetime
+import time
+import random
 
 BASE_FOLDER = 'Financial Statements'
 
-# กำหนด header สำหรับ request
 HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -35,7 +36,6 @@ def parse_html_table(response):
         return tables
     except ValueError:
         return []
-
 
 def process_dataframe(df):
     if isinstance(df.columns, pd.MultiIndex):
@@ -100,3 +100,8 @@ def scrape_financials(ticker):
         df_long = transform_to_long_format(df)
         df_long_cleaned = clean_data(df_long)
         save_to_csv(df_long_cleaned, ticker, statement_type)
+
+        # Delay
+        sleep_time = random.uniform(0, 2.0)
+        print(f"⏳ Waiting {sleep_time:.2f} seconds before next request...")
+        time.sleep(sleep_time)
